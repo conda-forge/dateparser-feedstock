@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: dateparser
@@ -7,7 +7,7 @@ package:
 source:
   fn: dateparser-{{ version }}.tar.gz
   url: https://github.com/scrapinghub/dateparser/archive/v{{ version }}.tar.gz
-  sha256: e95281355109ba87a779b3fcec8af73aade90a417e319b1b01bad6891974df0f
+  sha256: eec38d4036b7174d9ade2801c0a437f2af107fbfb69814791bbc42ac9ccb5918
 
 build:
   number: 0
