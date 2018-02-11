@@ -1,38 +1,31 @@
-{% set version = "0.6.0" %}
-
+{% set version = "0.7.0" %}
 
 package:
   name: dateparser
   version: {{ version }}
 
 source:
-  fn: dateparser-{{ version }}.tar.gz
-  url: https://github.com/scrapinghub/dateparser/archive/v{{ version }}.tar.gz
-  sha256: eec38d4036b7174d9ade2801c0a437f2af107fbfb69814791bbc42ac9ccb5918
+  url: https://pypi.io/packages/source/d/dateparser/dateparser-{{ version }}.tar.gz
+  sha256: 940828183c937bcec530753211b70f673c0a9aab831e43273489b310538dff86
 
 build:
-  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - python-dateutil
-    - ruamel.yaml
-    - jdatetime
-    - umalqurra
     - pytz
     - regex
     - tzlocal
-    - convertdate
 
 test:
   imports:
-    - data
     - dateparser
     - dateparser.calendars
     - dateparser.languages
