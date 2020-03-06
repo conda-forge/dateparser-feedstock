@@ -21,10 +21,14 @@ requirements:
     - python
     - python-dateutil
     - pytz
-    - regex
+    - regex !=2019.02.19
     - tzlocal
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - dateparser
     - dateparser.calendars
