@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -37,9 +37,9 @@ test:
 
 about:
   home: https://github.com/scrapinghub/dateparser
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
-  summary: Date parsing library designed to parse dates from HTML pages.
+  summary: Date parsing library designed to parse dates from HTML pages
 
 extra:
   recipe-maintainers:
