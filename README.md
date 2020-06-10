@@ -3,11 +3,11 @@ About dateparser
 
 Home: https://github.com/scrapinghub/dateparser
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Date parsing library designed to parse dates from HTML pages.
+Summary: Date parsing library designed to parse dates from HTML pages
 
 
 
