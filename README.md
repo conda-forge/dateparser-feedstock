@@ -5,11 +5,9 @@ Home: https://github.com/scrapinghub/dateparser
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dateparser-feedstock/blob/master/LICENSE.txt)
 
 Summary: Date parsing library designed to parse dates from HTML pages
-
-
 
 Current build status
 ====================
