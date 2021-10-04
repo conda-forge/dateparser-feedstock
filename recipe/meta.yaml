@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: dateparser
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dateparser/dateparser-{{ version }}.tar.gz
-  sha256: 159cc4e01a593706a15cd4e269a0b3345edf3aef8bf9278a57dac8adf5bf1e4a
+  sha256: faa2b97f51f3b5ff1ba2f17be90de2b733fb6191f89b4058787473e8202f3044
 
 build:
   number: 0
@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
