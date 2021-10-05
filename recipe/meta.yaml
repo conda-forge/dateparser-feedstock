@@ -12,16 +12,18 @@ build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - dateparser-download = dateparser_cli.cli:entrance
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
     - python-dateutil
     - pytz
-    - regex !=2019.02.19
+    - regex !=2019.02.19,!=2021.8.27
     - tzlocal
 
 test:
@@ -29,6 +31,7 @@ test:
     - pip
   commands:
     - pip check
+    - dateparser-download --help
   imports:
     - dateparser
     - dateparser.calendars
