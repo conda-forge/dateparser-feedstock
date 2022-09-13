@@ -32,6 +32,7 @@ test:
   commands:
     - pip check
     - dateparser-download --help
+    - python -c "import regex; regex.compile(r'').sub(r'\d', '\d')"
   imports:
     - dateparser
     - dateparser.calendars
