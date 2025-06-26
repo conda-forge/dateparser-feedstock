@@ -1,5 +1,5 @@
 {% set name = "dateparser" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dateparser-{{ version }}.tar.gz
-  sha256: 7e4919aeb48481dbfc01ac9683c8e20bfe95bb715a38c1e9f6af889f4f30ccc3
+  sha256: 986316f17cb8cdc23ea8ce563027c5ef12fc725b6fb1d137c14ca08777c5ecf7
 
 build:
   entry_points:
@@ -25,7 +25,7 @@ requirements:
     - python >={{ python_min }}
     - python-dateutil >=2.7.0
     - pytz >=2024.2
-    - regex >=2015.06.24,!=2019.02.19,!=2021.8.27
+    - regex >=2024.9.11
     - tzlocal >=0.2
 
 test:
