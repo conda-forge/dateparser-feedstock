@@ -3,11 +3,13 @@ About dateparser-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dateparser-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/scrapinghub/dateparser
+Home: https://pypi.org/project/dateparser/
 
 Package license: BSD-3-Clause
 
 Summary: Date parsing library designed to parse dates from HTML pages
+
+Development: https://github.com/scrapinghub/dateparser
 
 Current build status
 ====================
