@@ -3,11 +3,13 @@ About dateparser-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dateparser-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/scrapinghub/dateparser
+Home: https://pypi.org/project/dateparser/
 
 Package license: BSD-3-Clause
 
 Summary: Date parsing library designed to parse dates from HTML pages
+
+Development: https://github.com/scrapinghub/dateparser
 
 Current build status
 ====================
@@ -40,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `dateparser` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install dateparser
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install dateparser
 ```
 
-It is possible to list all of the versions of `dateparser` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add dateparser
+# for installing globally
+pixi global install dateparser
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `dateparser` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search dateparser --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search dateparser --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search dateparser --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +120,8 @@ mamba repoquery whoneeds dateparser --channel conda-forge
 # List dependencies of `dateparser`:
 mamba repoquery depends dateparser --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
