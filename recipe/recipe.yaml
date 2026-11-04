@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.4.3"
+  version: "1.5.0"
 
 package:
   name: dateparser
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/dateparser/dateparser-${{ version }}.tar.gz
-  sha256: bab8c43a746266e68142f4926e69438ce551441aa88e54e78bb6410bf3ee7000
+  sha256: 08d62f2c00d3a1e806fc59d40c79e7554e31d84d3b8c6145820af051c92e7292
 
 build:
   number: 0
